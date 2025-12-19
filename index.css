@@ -1,0 +1,111 @@
+* {
+  margin: 0;
+  height: 0;
+  box-sizing: border-box;
+}
+body {
+  background: lightblue;
+}
+.containerDiv {
+  width: 1000px;
+  height: 500px;
+  background-color: #fff;
+  margin: 50px auto;
+  padding-top: 10px;
+}
+.containerDiv h1 {
+  font-size: 40px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: capitalize;
+  font-family: "Archivo", sans-serif;
+  color: #008080;
+}
+.main {
+  width: 95%;
+  height: 90%;
+  border: 1px solid transparent;
+  margin: 100px auto;
+  box-sizing: border-box;
+}
+.main .img {
+  width: 33%;
+  height: 70%;
+  border: 1px solid transparent;
+  position: relative;
+  float: left;
+}
+.main .icons {
+  width: 50px;
+  height: 120px;
+  border: 1px solid transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.main i {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: white;
+  font-size: 25px;
+  color: #008080;
+  margin: 5px;
+  text-align: center;
+  line-height: 35px;
+  opacity: 0;
+  transition: 0.5s all linear;
+}
+.main .img:hover i {
+  opacity: 1;
+}
+.main img {
+  width: 100%;
+  height: 100%;
+}
+h2 {
+  font-family: "Archivo", sans-serif;
+  color: #008080;
+  font-weight: 400;
+  text-align: center;
+  line-height: 50px;
+}
+h4 {
+  color: #008080;
+  font-style: italic;
+  font-family: "Archivo", sans-serif;
+  text-align: center;
+  line-height: 100px;
+  font-weight: 400;
+}
+@media (max-width: 768px) {
+  .containerDiv {
+    width: 700px;
+    height: 400px;
+    
+  }
+  .main{
+    margin: 70px auto;
+  }
+}
+@media (max-width: 425px) {
+  .containerDiv {
+    width: 95%;
+    height: 300px;
+  }
+  .main{
+    height: 70%;
+    margin: 60px auto;
+  }
+  .containerDiv h1{
+    font-size: 20px;
+  }
+  .main h2{
+    font-size: 16px;
+  }
+  .main h4{
+    font-size: 14px;
+  }
+}
